@@ -7,6 +7,13 @@ void main() {
 
 //ฟังก์ชันสร้างแผงหน้าจอให้ พิมพ์ stl
 class MyApp extends StatelessWidget {
+
+//Explicit การประกาศตัวแปร
+var nameString = 'Supawadee';
+
+
+
+
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -15,8 +22,8 @@ class MyApp extends StatelessWidget {
         appBar: new AppBar(
           title: new Text('Hello Flutter AppBar'),
         ),
-        body: new Text('This is Body'),
+        body: new Text(nameString),
       ), //Toobarด้านบน
     ); //ต้องใช้ title and home เสมอ กดลัดจัดโค้ดให้สวยงาม shift+alt+f
   }
-}
+}//MyApp Class
